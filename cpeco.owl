@@ -1,871 +1,471 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cpeco.owl"
      xml:base="http://purl.obolibrary.org/obo/cpeco.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    <Prefix name="" IRI="http://purl.obolibrary.org/obo/cpeco.owl"/>
-    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
-    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
-    <Declaration>
-        <Class abbreviatedIRI="obo:DOID_3526"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000027"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000030"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:MF_0000016"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:OGMS_0000031"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:OGMS_0000073"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:OGMS_0000104"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:OGMS_0000123"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:OMRSE_00000011"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="obo:RO_0000053"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="obo:RO_0000056"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000114"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="obo:RO_0001900"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/mondo#exactMatch"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:type"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#source"/>
-    </Declaration>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:DOID_3526"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="obo:OGMS_0000031"/>
-            <ObjectAllValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:RO_0000053"/>
-                <Class abbreviatedIRI="obo:MF_0000016"/>
-            </ObjectAllValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000027"/>
-        <Class abbreviatedIRI="obo:IAO_0000030"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000030"/>
-        <Class abbreviatedIRI="obo:BFO_0000031"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:MF_0000016"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="obo:BFO_0000040"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:RO_0000053"/>
-                <Class abbreviatedIRI="obo:OMRSE_00000011"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:RO_0000056"/>
-                <Class abbreviatedIRI="obo:OGMS_0000104"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:OGMS_0000031"/>
-        <Class abbreviatedIRI="obo:BFO_0000016"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:OGMS_0000104"/>
-        <Class abbreviatedIRI="obo:BFO_0000015"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:OGMS_0000123"/>
-        <Class abbreviatedIRI="obo:IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:OMRSE_00000011"/>
-        <Class abbreviatedIRI="obo:BFO_0000023"/>
-    </SubClassOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-        <ObjectProperty abbreviatedIRI="obo:RO_0000056"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty abbreviatedIRI="obo:RO_0000053"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty abbreviatedIRI="obo:RO_0000056"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal>A cerebrovascular disease that is characterized by an area of necrotic tissue in the brain resulting from a blockage or narrowing in the arteries supplying blood and oxygen to the brain.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal>http://purl.obolibrary.org/obo/doid/releases/2021-04-29/doid.owl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:type"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <AbbreviatedIRI>obo:ECO_0007638</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal>ICD10CM:I63</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal>MESH:D002544</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal>NCI:C50486</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal>OMIM:601367</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal>SNOMEDCT_US_2020_09_01:195188006</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal>UMLS_CUI:C0007785</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal>url:https://en.wikipedia.org/wiki/Cerebral_infarction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal xml:lang="en">CVA - Cerebral infarction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal xml:lang="en">Cerebral infarct</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal xml:lang="en">Cerebral infarction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal>disease_ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal>DOID:3526</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <IRI>http://purl.obolibrary.org/obo/doid#NCIthesaurus</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:DOID_3526</AbbreviatedIRI>
-        <Literal>cerebral infarction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal xml:lang="en">data item</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000114"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <AbbreviatedIRI>obo:IAO_0000125</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal xml:lang="en">2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal>2014-03-31: See discussion at http://odontomachus.wordpress.com/2014/03/30/aboutness-objects-propositions/</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal xml:lang="en">JAR: datum     -- well, this will be very tricky to define, but maybe some 
+     xmlns:mondo="http://purl.obolibrary.org/obo/mondo#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cpeco.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label>editor preferred label</rdfs:label>
+        <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
+        <rdfs:label>editor preferred term</rdfs:label>
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label>textual definition</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label>definition editor</rdfs:label>
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <rdfs:label>term editor</rdfs:label>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label>definition source</rdfs:label>
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <rdfs:label>curator note</rdfs:label>
+        <rdfs:label xml:lang="en">curator note</rdfs:label>
+        <rdfs:label>curator notes</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900">
+        <rdfs:label xml:lang="en">temporal interpretation</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mondo#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#exactMatch"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type">
+        <rdfs:label>dc:type</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label>id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label>in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#source -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#source"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+        <rdfs:label xml:lang="en">label</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
+
+We will try to build it back up by elaborating the various subproperties that are more precisely defined.
+
+Some currently missing phenomena that should be considered &quot;about&quot; are predications - &quot;The only person who knows the answer is sitting beside me&quot; , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <obo:IAO_0000111>is_specified_output_of</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">is_specified_output_of</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/obi/2021-04-06/obi.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">is_specified_output_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000111 xml:lang="en">bearer of</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this apple is bearer of this red color</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this vase is bearer of this fragility</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">bearer_of</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">is bearer of</obo:IAO_0000118>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/ro/releases/2021-03-08/ro.owl</obo:IAO_0000412>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:label xml:lang="en">bearer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000111 xml:lang="en">participates in</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this blood clot participates in this blood coagulation</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this input material (or this output material) participates in this process</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigator participates in this investigation</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">participates_in</obo:IAO_0000118>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/ro/releases/2021-03-08/ro.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_3526 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3526">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cerebrovascular disease that is characterized by an area of necrotic tissue in the brain resulting from a blockage or narrowing in the arteries supplying blood and oxygen to the brain.</obo:IAO_0000115>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2021-04-29/doid.owl</obo:IAO_0000412>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <oboInOwl:hasDbXref>ICD10CM:I63</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D002544</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C50486</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OMIM:601367</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2020_09_01:195188006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0007785</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Cerebral_infarction</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">CVA - Cerebral infarction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">Cerebral infarct</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">Cerebral infarction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:3526</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label>cerebral infarction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">data item</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
+        <obo:IAO_0000116>2014-03-31: See discussion at http://odontomachus.wordpress.com/2014/03/30/aboutness-objects-propositions/</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">JAR: datum     -- well, this will be very tricky to define, but maybe some 
 information-like stuff that might be put into a computer and that is 
 meant, by someone, to denote and/or to be interpreted by some 
 process... I would include lists, tables, sentences... I think I might 
 defer to Barry, or to Brian Cantwell Smith
 
-JAR: A data item is an approximately justified approximately true approximate belief</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Jonathan Rees</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal xml:lang="en">data</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal>http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
-        <Literal xml:lang="en">data item</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
-        <Literal xml:lang="en">information content entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
-        <Literal xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000114"/>
-        <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
-        <AbbreviatedIRI>obo:IAO_0000122</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
-        <Literal xml:lang="en">A generically dependent continuant that is about some thing.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
-        <Literal xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
-        <Literal xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
+JAR: A data item is an approximately justified approximately true approximate belief</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">data item</rdfs:label>
+    </owl:Class>
+    
 
-Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000142</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
-        <Literal>http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
-        <Literal xml:lang="en">information content entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000111</AbbreviatedIRI>
-        <Literal>editor preferred label</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000111</AbbreviatedIRI>
-        <Literal xml:lang="en">editor preferred label</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000111</AbbreviatedIRI>
-        <Literal>editor preferred term</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000111</AbbreviatedIRI>
-        <Literal xml:lang="en">editor preferred term</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000111</AbbreviatedIRI>
-        <Literal>editor preferred term~editor preferred label</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000112</AbbreviatedIRI>
-        <Literal xml:lang="en">example of usage</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000114</AbbreviatedIRI>
-        <Literal xml:lang="en">has curation status</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000115</AbbreviatedIRI>
-        <Literal>definition</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000115</AbbreviatedIRI>
-        <Literal xml:lang="en">definition</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000115</AbbreviatedIRI>
-        <Literal>textual definition</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000116</AbbreviatedIRI>
-        <Literal xml:lang="en">editor note</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000117</AbbreviatedIRI>
-        <Literal>definition editor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000117</AbbreviatedIRI>
-        <Literal xml:lang="en">definition editor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000117</AbbreviatedIRI>
-        <Literal>term editor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000117</AbbreviatedIRI>
-        <Literal xml:lang="en">term editor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000118</AbbreviatedIRI>
-        <Literal xml:lang="en">alternative term</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000119</AbbreviatedIRI>
-        <Literal>definition source</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000119</AbbreviatedIRI>
-        <Literal xml:lang="en">definition source</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000136</AbbreviatedIRI>
-        <Literal xml:lang="en">This document is about information artifacts and their representations</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000114"/>
-        <AbbreviatedIRI>obo:IAO_0000136</AbbreviatedIRI>
-        <AbbreviatedIRI>obo:IAO_0000125</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000136</AbbreviatedIRI>
-        <Literal xml:lang="en">A (currently) primitive relation that relates an information artifact to an entity.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000136</AbbreviatedIRI>
-        <Literal xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
 
-We will try to build it back up by elaborating the various subproperties that are more precisely defined.
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
-Some currently missing phenomena that should be considered &quot;about&quot; are predications - &quot;The only person who knows the answer is sitting beside me&quot; , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000136</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000136</AbbreviatedIRI>
-        <Literal xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:IAO_0000136</AbbreviatedIRI>
-        <Literal>http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000136</AbbreviatedIRI>
-        <Literal xml:lang="en">is about</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000232</AbbreviatedIRI>
-        <Literal>curator note</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000232</AbbreviatedIRI>
-        <Literal xml:lang="en">curator note</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000232</AbbreviatedIRI>
-        <Literal>curator notes</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000412</AbbreviatedIRI>
-        <Literal xml:lang="en">imported from</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:MF_0000016</AbbreviatedIRI>
-        <Literal>A member of the species Homo Sapiens.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:MF_0000016</AbbreviatedIRI>
-        <Literal>person</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:MF_0000016</AbbreviatedIRI>
-        <Literal>http://purl.obolibrary.org/obo/MF/2020-08-07/MF.owl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:MF_0000016</AbbreviatedIRI>
-        <Literal>human being</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:OBI_0000312</AbbreviatedIRI>
-        <Literal>is_specified_output_of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:OBI_0000312</AbbreviatedIRI>
-        <Literal xml:lang="en">is_specified_output_of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000114"/>
-        <AbbreviatedIRI>obo:OBI_0000312</AbbreviatedIRI>
-        <AbbreviatedIRI>obo:IAO_0000122</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:OBI_0000312</AbbreviatedIRI>
-        <Literal xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:OBI_0000312</AbbreviatedIRI>
-        <Literal xml:lang="en">Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:OBI_0000312</AbbreviatedIRI>
-        <Literal>PERSON:Bjoern Peters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:OBI_0000312</AbbreviatedIRI>
-        <Literal>http://purl.obolibrary.org/obo/obi/2021-04-06/obi.owl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:OBI_0000312</AbbreviatedIRI>
-        <Literal xml:lang="en">is_specified_output_of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:OGMS_0000031</AbbreviatedIRI>
-        <Literal xml:lang="en">A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:OGMS_0000031</AbbreviatedIRI>
-        <Literal>Albert Goldfain</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:OGMS_0000031</AbbreviatedIRI>
-        <Literal>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000232"/>
-        <AbbreviatedIRI>obo:OGMS_0000031</AbbreviatedIRI>
-        <Literal>creation date: 2009-06-23T11:21:20Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:OGMS_0000031</AbbreviatedIRI>
-        <Literal>https://github.com/OGMS/ogms/releases/tag/2021-04-20</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:OGMS_0000031</AbbreviatedIRI>
-        <Literal>disease</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:OGMS_0000073</AbbreviatedIRI>
-        <Literal xml:lang="en">The representation of a conclusion of a diagnostic process.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:OGMS_0000073</AbbreviatedIRI>
-        <Literal>Albert Goldfain</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:OGMS_0000073</AbbreviatedIRI>
-        <Literal>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000232"/>
-        <AbbreviatedIRI>obo:OGMS_0000073</AbbreviatedIRI>
-        <Literal>creation date: 2009-06-23T12:42:23Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:OGMS_0000073</AbbreviatedIRI>
-        <Literal>https://github.com/OGMS/ogms/releases/tag/2021-04-20</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:OGMS_0000073</AbbreviatedIRI>
-        <Literal>diagnosis</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:OGMS_0000104</AbbreviatedIRI>
-        <Literal xml:lang="en">An interpretive process that has as input a clinical picture of a given patient and as output an assertion to the effect that the patient has a disease, disorder, or syndrome of a certain type, or none of these.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:OGMS_0000104</AbbreviatedIRI>
-        <Literal>Albert Goldfain</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:OGMS_0000104</AbbreviatedIRI>
-        <Literal>http://groups.google.com/group/ogms-discuss/browse_thread/thread/2a7008f311fac766/e7de486c94dfd82e</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000232"/>
-        <AbbreviatedIRI>obo:OGMS_0000104</AbbreviatedIRI>
-        <Literal>creation date: 2011-09-20T09:57:44Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:OGMS_0000104</AbbreviatedIRI>
-        <Literal>http://purl.obolibrary.org/obo/cido.owl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:OGMS_0000104</AbbreviatedIRI>
-        <Literal>diagnostic process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:OGMS_0000123</AbbreviatedIRI>
-        <Literal>A data item that is about a patient and is the specified output of a health care process assay or diagnostic process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000232"/>
-        <AbbreviatedIRI>obo:OGMS_0000123</AbbreviatedIRI>
-        <Literal>creation date: 2018-11-27</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:OGMS_0000123</AbbreviatedIRI>
-        <Literal>https://github.com/OGMS/ogms/releases/tag/2021-04-20</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:OGMS_0000123</AbbreviatedIRI>
-        <Literal xml:lang="en">clinical data item</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:OMRSE_00000011</AbbreviatedIRI>
-        <Literal xml:lang="en">A role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:OMRSE_00000011</AbbreviatedIRI>
-        <Literal xml:lang="en">Amanda Hicks</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:OMRSE_00000011</AbbreviatedIRI>
-        <Literal xml:lang="en">Mathias Brochhausen</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:OMRSE_00000011</AbbreviatedIRI>
-        <Literal xml:lang="en">patient</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:OMRSE_00000011</AbbreviatedIRI>
-        <Literal xml:lang="en">CAFE domain expert working group.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:OMRSE_00000011</AbbreviatedIRI>
-        <Literal>http://purl.obolibrary.org/obo/omrse/releases/2021-04-21/omrse.owl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>obo:OMRSE_00000011</AbbreviatedIRI>
-        <Literal xml:lang="en">In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov&apos;t entities, with a person endowed by the gov&apos;t with certain certifications.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:OMRSE_00000011</AbbreviatedIRI>
-        <Literal xml:lang="en">patient role</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:RO_0000053</AbbreviatedIRI>
-        <Literal xml:lang="en">bearer of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:RO_0000053</AbbreviatedIRI>
-        <Literal xml:lang="en">this apple is bearer of this red color</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:RO_0000053</AbbreviatedIRI>
-        <Literal xml:lang="en">this vase is bearer of this fragility</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:RO_0000053</AbbreviatedIRI>
-        <Literal xml:lang="en">a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:RO_0000053</AbbreviatedIRI>
-        <Literal xml:lang="en">A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:RO_0000053</AbbreviatedIRI>
-        <Literal xml:lang="en">bearer_of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:RO_0000053</AbbreviatedIRI>
-        <Literal xml:lang="en">is bearer of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:RO_0000053</AbbreviatedIRI>
-        <Literal>http://purl.obolibrary.org/obo/ro/releases/2021-03-08/ro.owl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:RO_0001900"/>
-        <AbbreviatedIRI>obo:RO_0000053</AbbreviatedIRI>
-        <AbbreviatedIRI>obo:RO_0001901</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:RO_0000053</AbbreviatedIRI>
-        <Literal xml:lang="en">bearer of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:RO_0000056</AbbreviatedIRI>
-        <Literal xml:lang="en">participates in</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:RO_0000056</AbbreviatedIRI>
-        <Literal xml:lang="en">this blood clot participates in this blood coagulation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:RO_0000056</AbbreviatedIRI>
-        <Literal xml:lang="en">this input material (or this output material) participates in this process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:RO_0000056</AbbreviatedIRI>
-        <Literal xml:lang="en">this investigator participates in this investigation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:RO_0000056</AbbreviatedIRI>
-        <Literal xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:RO_0000056</AbbreviatedIRI>
-        <Literal xml:lang="en">participates_in</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:RO_0000056</AbbreviatedIRI>
-        <Literal>http://purl.obolibrary.org/obo/ro/releases/2021-03-08/ro.owl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:RO_0000056</AbbreviatedIRI>
-        <Literal xml:lang="en">participates in</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:RO_0001900</AbbreviatedIRI>
-        <Literal xml:lang="en">temporal interpretation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dc:type</AbbreviatedIRI>
-        <Literal>dc:type</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.geneontology.org/formats/oboInOwl#hasDbXref</IRI>
-        <Literal>database_cross_reference</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.geneontology.org/formats/oboInOwl#hasExactSynonym</IRI>
-        <Literal>has_exact_synonym</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.geneontology.org/formats/oboInOwl#hasOBONamespace</IRI>
-        <Literal>has_obo_namespace</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.geneontology.org/formats/oboInOwl#id</IRI>
-        <Literal>id</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.geneontology.org/formats/oboInOwl#inSubset</IRI>
-        <Literal>in_subset</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>rdfs:label</AbbreviatedIRI>
-        <Literal>label</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>rdfs:label</AbbreviatedIRI>
-        <Literal xml:lang="en">label</Literal>
-    </AnnotationAssertion>
-</Ontology>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
+
+Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000016">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000011"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000104"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A member of the species Homo Sapiens.</obo:IAO_0000115>
+        <obo:IAO_0000118>person</obo:IAO_0000118>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/MF/2020-08-07/MF.owl</obo:IAO_0000412>
+        <rdfs:label>human being</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115 xml:lang="en">A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2009-06-23T11:21:20Z</obo:IAO_0000232>
+        <obo:IAO_0000412>https://github.com/OGMS/ogms/releases/tag/2021-04-20</obo:IAO_0000412>
+        <rdfs:label>disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000073">
+        <obo:IAO_0000115 xml:lang="en">The representation of a conclusion of a diagnostic process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2009-06-23T12:42:23Z</obo:IAO_0000232>
+        <obo:IAO_0000412>https://github.com/OGMS/ogms/releases/tag/2021-04-20</obo:IAO_0000412>
+        <rdfs:label>diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">An interpretive process that has as input a clinical picture of a given patient and as output an assertion to the effect that the patient has a disease, disorder, or syndrome of a certain type, or none of these.</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/2a7008f311fac766/e7de486c94dfd82e</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2011-09-20T09:57:44Z</obo:IAO_0000232>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/cido.owl</obo:IAO_0000412>
+        <rdfs:label>diagnostic process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115>A data item that is about a patient and is the specified output of a health care process assay or diagnostic process</obo:IAO_0000115>
+        <obo:IAO_0000232>creation date: 2018-11-27</obo:IAO_0000232>
+        <obo:IAO_0000412>https://github.com/OGMS/ogms/releases/tag/2021-04-20</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">clinical data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">A role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">patient</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">CAFE domain expert working group.</obo:IAO_0000119>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse/releases/2021-04-21/omrse.owl</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov&apos;t entities, with a person endowed by the gov&apos;t with certain certifications.</rdfs:comment>
+        <rdfs:label xml:lang="en">patient role</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
 
 
 
